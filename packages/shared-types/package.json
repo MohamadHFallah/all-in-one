@@ -1,0 +1,31 @@
+{
+  "name": "@repo/shared-types",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "globals": "^16.5.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "tsup": "^8.5.1",
+    "zod": "^4.4.3"
+  }
+}
