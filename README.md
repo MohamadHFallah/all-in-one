@@ -1,7 +1,13 @@
-# Turborepo starter
+# All In One Turborepo starter
 
-This Turborepo includes the following packages/apps:
+A Turborepo codebase for building fullstack application with shared packages:
 
+## Highlights
+ - Type-safe full stack
+ - Shard types
+ - NestJS with Prisma ORM 
+
+____________________________________________
 ### Apps and Packages
 
 - `backend`: a [Nest.js](https://nestjs.com/) app
@@ -29,18 +35,6 @@ cd allInOne
 turbo build
 ```
 
-Without global `turbo`, use your package manager:
-
-```sh
-cd allInOne
-npx turbo build
-pnpm dlx turbo build
-pnpm exec turbo build
-```
-
-```sh
-turbo build --filter=docs
-```
 
 Without global `turbo`:
 
@@ -54,34 +48,9 @@ pnpm exec turbo build --filter=docs
 
 To develop all apps and packages, run the following command:
 
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
-
-```sh
-cd allInOne
-turbo dev
-```
-
-Without global `turbo`, use your package manager:
-
-```sh
-cd allInOne
-npx turbo dev
-pnpm exec turbo dev
-pnpm exec turbo dev
-```
-
 You can develop a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
 
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
 
 ```sh
 turbo dev --filter=backend
-```
-
-Without global `turbo`:
-
-```sh
-npx turbo dev --filter=backend
-pnpm exec turbo dev --filter=backend
-pnpm exec turbo dev --filter=backend
 ```
